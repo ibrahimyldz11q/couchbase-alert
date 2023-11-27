@@ -1,0 +1,5 @@
+# Crontab dosyasını düzenle
+crontab -e
+
+# Açılan editörde aşağıdaki satırı ekleyin (örneğin her saat başında):
+0 * * * * /path/to/couchbase_alerts.sh && /path/to/send_mail.sh
